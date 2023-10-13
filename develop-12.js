@@ -3,7 +3,7 @@
 * 프로젝트의 파일시스템에 접근하기 위해 fs 모듈을 가져오기(import)하였다
 */
 
-const http = require('http');
+const http = require('http'); //생성자 함수
 const fs = require('fs');
 
 /** 
