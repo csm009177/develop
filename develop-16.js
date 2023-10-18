@@ -1,3 +1,4 @@
+// method1
 const _pokemon = {
   pokemonName : "피카츄",
   type : "전기",
@@ -5,6 +6,7 @@ const _pokemon = {
   skill : ["10만볼트", "전광석화", "아이언테일", "볼트태클"]
 };
 
+// method2
 const {pokemonName, type} = _pokemon;
 
 // 그동안 객체 접근 방식을 채택해서 작성했던 방식으로, javascript 뿐 아니라, 다른 언어에서도 많이 사용하는 방식
