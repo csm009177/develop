@@ -47,4 +47,4 @@ class User {
 
 // 예제 호출
 const userChoi = new User("CSM", "csm009177@gmail.com");
-userChoi.chowProfile();
+userChoi.showProfile();
