@@ -3,7 +3,7 @@ const http = require('http');
 // 1. 보통 생성자 함수는 파스칼 케이스 방식, 첫글자를 대문자로 작성하는 편이다
 // * 최근의 vscode 에디터는 생성자 함수 방식인 경우, 일반 함수와 구분지어서 표시해준다
 
-class SimplleServer {
+class SimpleServer {
   // 2. 인스턴스를 받을 때 생성자 함수의 파라미터로 포트번호를 받는다.
   // * '인자를 받는다' 라고 표현하기도 한다.
   constructor (port) {
@@ -26,7 +26,7 @@ class SimplleServer {
 }
 // SimpleServer 인스턴스 생성 및 시작
 
-const SimpleApp = new SimplleServer(3000);
+const SimpleApp = new SimpleServer(3000);
 SimpleApp.start();
 
 const portRange = {
@@ -38,6 +38,6 @@ const portRange = {
 // 각각의 역할을 하는 포트를 만들어서 사용할 수 있다.
 
 for(let i = portRange.min; i<portRange.max; i++){
-  const app = new SimplleServer(i);
+  const app = new SimpleServer(i);
   app.start();
 }
